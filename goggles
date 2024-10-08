@@ -1,0 +1,322 @@
+! name: Slop free search
+! description: A slop free experience
+! author: Me (insert github username here)
+! avatar — specifies a valid HEX color code for your Goggle.
+! public: false
+
+! ^^^ that is *mandatory* metadata
+
+! example comment
+
+
+! remove website
+!$discard, site=example.com 
+
+! boost website
+!$site=example.com,boost=2
+
+
+! THE SLOP
+! .gov websites
+$discard,site=*.ussc.gov/*
+$discard,site=*.dea.gov
+$discard,site=*.justice.gov
+
+! HEALTH INFORMATION
+$discard,site=*.clevelandclinic.org/*
+$discard,site=*.thrillist.com/*
+$discard,site=*.livestrong.com/*
+$discard,site=*.americanaddictioncenters.org/*
+$discard,site=*.drugbank.com/*
+$discard,site=*.drugfree.org/*
+$discard,site=*.bannerhealth.com/*
+$discard,site=health.com/*
+$discard,site=mindbodygreen.com/*
+$discard,site=verywellfit.com/*
+$discard,site=webmd.com/*
+$discard,site=www.webmd.com/*
+$discard,site=www.verywellhealth.com/*
+$discard,site=www.goodrx.com/*
+$discard,site=www.businessinsider.com/*
+$discard,site=health.clevelandclinic.org/*
+$discard,site=www.healthline.com/*
+$discard,site=*.medicinenet.com/*
+$discard,site=everydayhealth.com/*
+$discard,site=*.eatingwell.com/*
+$discard,site=*.mayoclinic.org/*
+$discard,site=*.mountsinai.org/*
+$discard,site=medicalnewstoday.com/*
+
+! SHOPPING
+$discard,site=*.macys.com/*
+$discard,site=*.target.com/*
+$discard,site=*.amazon.com/*
+$discard,site=*.bestbuy.com/*
+$discard,site=*.walmart.com/*
+
+! PAYWALLED
+$discard,site=*.nytimes.com/*
+
+! GENERAL
+$discard,site=*.pinterest.com/*
+$discard,site=*.quora.com/*
+$discard,site=*.ifunny.co/*
+$discard,site=www.spokeo.com/*
+$discard,site=www.whitepages.com/*
+$discard,site=*.mashed.com/*
+$discard,site=*.zdnet.com/*
+$discard,site=*.greatist.com/*
+$discard,site=*.cnet.com/*
+$discard,site=*.foodandwine.com/*
+$discard,site=*.insanelygoodrecipes.com/*
+$discard,site=*.primermagazine.com/*
+$discard,site=*.yelp.com/*
+$discard,site=*.draxe.com/*
+$discard,site=usatoday.com/*
+$discard,site=womenshealthmag.com/*
+$discard,site=goodhousekeeping.com/*
+$discard,site=forbes.com/*
+$discard,site=*.toptenreviews.com/*
+$discard,site=*.yellowpages.com/*
+$discard,site=*.usnews.com/*
+$discard,site=*.msn.com/*
+$discard,site=*.tomsguide.com/*
+$discard,site=*.pcmag.com/*
+$discard,site=*.digitaltrends.com/*
+$discard,site=*.theverge.com/*
+$discard,site=alternativeto.net/*
+$discard,site=nuwber.com/*
+$discard,site=manoa.hawaii.edu/graduate/*
+$discard,site=adminguide.stanford.edu/*
+
+
+!BOOST IT
+! GENERAL 
+*.edu/*$boost
+scholar.google.com/*$boost
+
+!SUBREDDITS
+reddit.com/r/Piracy/*$boost
+reddit.com/r/distroreviews/*$boost
+reddit.com/r/DistroHopping/*$boost
+reddit.com/r/OpenSourceGames/*$boost
+reddit.com/r/LinuxGaming/*$boost
+reddit.com/r/FreeGaming/*$boost
+reddit.com/r/LinuxDevices/*$boost
+reddit.com/r/LinuxAdmin/*$boost
+reddit.com/r/gnu/*$boost
+reddit.com/r/kernel/*$boost
+reddit.com/r/linuxquestions$boost
+reddit.com/r/linux4noobs/*$boost
+reddit.com/r/linuxmint/*$boost
+reddit.com/r/ubuntu/*$boost
+reddit.com/r/linux/*$boost
+reddit.com/r/linuxaudio/*$boost
+reddit.com/r/grapheneos/*$boost
+reddit.com/r/archlinux/*$boost
+reddit.com/r/NixOS/*$boost
+
+! DISCUSSIONS
+boardreader.com/*$boost
+forum.mobilism.org/*$boost
+forums.phoenixrising.me/*$boost
+*.stackexchange.com$boost
+community.upwork.com/*$boost
+*.forumsforums.com/*$boost
+*.writingforums.com/*$boost
+techrepublic.com/forums/*$boost
+*.tenforums.com/*$boost
+xdaforums.com/*$boost
+gamefaqs.gamespot.com/*$boost
+*.nexusmods.com/*$boost
+community.spiceworks.com/*$boost
+*.lobste.rs/*$boost
+*.hubski.com/*$boost
+*.it-maniacs.com/*$boost
+community.etsy.com/*$boost
+*.tildes.net/*$boost
+forums.ea.com/*$boost
+wordpress.com/forums/*$boost
+*.anandtech.com/*$boost
+
+! LINUX
+*.linuxtv.org/*$boost
+*.linux.org/*$boost
+*.linuxlinks.com/*$boost
+*.github.io/*$boost
+*.linuxquestions.org/*$boost
+*.linuxuprising.com/*$boost
+*.bodhilinux.com/*$boost
+*.linuxfoundation.org/*$boost
+*.automotivelinux.org/*$boost
+*.ubuntuforums.org/*$boost
+*.gentoo.org/*$boost
+*.alpinelinux.org/*$boost
+*.almalinux.org/*$boost
+*.rockylinux.org/*$boost
+*.archlinux.org/*$boost
+*.linuxmint.com/*$boost
+*.nixos.org/*$boost
+*.ubuntu.com/*$boost
+askubuntu.com/*$boost
+*.debian.org/*$boost
+www.linuxlinks.com/*$boost
+*.redhat.com/*$boost
+*.kernel.org/*$boost
+*.antixforum.com/*$boost
+*.debian.net/*$boost
+*.zero-to-nix.com/*$boost
+*.nix.dev/*$boost
+*.mynixos.com/*$boost
+*.system76.com/*$boost
+*.superuser.com/*$boost
+*.fedoraproject.org/*$boost
+*.centos.org/*$boost
+*.endeavouros.com/*$boost
+*.manjaro.org/*$boost
+*.gnu.org/*$boost
+
+! LINK COLLECTIONS
+https://curlie.org/en/*$boost
+
+! MUSIC
+*.bandcamp.com/*$boost
+
+! NEWS
+www.npr.org/*$boost
+www.democracynow.org/*$boost
+
+! FANDOM
+*.livejournal.com/*$boost
+www.fanfiction.net/*$boost
+archiveofourown.org/*$boost
+
+! DRUGS
+*.drugsdb.com/*$boost
+*.shroomery.org/*$boost
+*.druglibrary.org/*$boost
+*.bluelight.org/*$boost
+*.erowid.org/*$boost
+harmreductionjournal.biomedcentral.com/*$boost
+
+! SOFTWARE
+itsfoss.com/*$boost
+*.libreoffice.org/*$boost
+*.w3schools.com/*$boost
+github.com/*$boost
+
+! SHADOW LIBRARIES/REPOSITORIES
+*.sci-hub.st/*$boost
+*.pdfcookie.com/*$boost
+*.idoc.tips/*$boost
+*.openlibrary.org/*$boost
+*.oceanofpdf.com/*$boost
+*.pdfdrive.com/*$boost
+*.noor-book.com/*$boost
+*.libgen.gs/*$boost
+*.annas-archive.org/*$boost
+*.arxiv.org/*$boost
+*.sourceforge.net/*$boost
+
+! WIKIPEDIA ETC
+en.wikipedia.org/*$boost
+en.wikitionary.org/*$boost
+commons.wikimedia.org/*$boost
+en.wikibooks.org/*$boost
+en.wikiquote.org/*$boost
+en.wikiversity.org/*$boost
+www.mediawiki.org/*$boost
+www.wikidata.org/*$boost
+en.wikisource.org/*$boost
+en.wikivoyage.org/*$boost
+meta.wikimedia.org/*$boost
+en.wikinews.org/*$boost
+species.wikimedia.org/*$boost
+
+! IDAHO
+*.boisestatepublicradio.org/*$boost
+*.visitsouthwestidaho.org/*$boost
+*.totallyboise.com/*$boost
+lynx.lili.org/*$boost
+*.mld.org/*$boost
+*.downtownboise.org/*$boost
+*.thriveinidaho.com/*$boost
+*.visitboise.com/*$boost
+*.travelingspud.com/*$boost
+*.idahouncovered.com/*$boost
+*.visitidaho.org/*$boost
+*.idahomagazine.com/*$boost
+*.idahostatesman.com/*$boost
+www.idahostatesman.com/*$boost
+legislature.idaho.gov/*$boost
+boise.craigslist.org/*$boost
+*.ktvb.com/*$boost
+
+! SMALL WEB/BLOGS
+*.notion.site/*$boost
+*.angelfire.com/*$boost
+*.weebly.com/*$boost
+starthere.neocities.org/*$boost
+*.neocities.org/*$boost
+*.blogspot.com$boost
+*.tripod.com$boost
+*.wordpress.com$boost
+
+! SHOPPING
+*.shopjimmy.com/*$boost
+*.abebooks.com/*$boost
+*.ebay.com/*$boost
+www.betterworldbooks.com/*$boost
+www.thriftbooks.com/*$boost
+www.popsike.com/*$boost
+www.discogs.com/*$boost
+
+! ELECTRONICS/ENGINEERING
+*.ieee.org/*$boost
+*.e-repair.co.uk/*$boost
+*.repairfaq.org/*$boost
+*.plcs.net/*$boost
+*.plctalk.net/*$boost
+*.ni.com/*$boost
+*.debugpoint.com/*$boost
+*.digikey.com/*$boost
+*.beyondlogic.org/*$boost
+*.keysight.com/*$boost
+*.precisionzone.net/*$boost
+*.arduino.cc/*$boost
+forum.arduino.cc/*$boost
+*.anatekinstruments.com/*$boost
+*.futurlec.com/*$boost
+*.moteva.com/*$boost
+*.studiosoundelectronics.com/*$boost
+*.cbsmart.com/*$boost
+*.alans-sales.com/*$boost
+*.j-tron.com/*$boost
+*.aretronics.com/*$boost
+*.mcdelectronics.com/*$boost
+*.eko-fpga.com/*$boost
+*.smcelectronics.com/*$boost
+*.timemachinescorp.com/*$boost
+*.jpmsupply.com/*$boost
+www.electronics-notes.com/*$boost
+www.cookingforengineers.com/*$boost
+www.itechtics.com/*$boost
+www.eevblog.com/*$boost
+www.arduino.cc/*$boost
+microcontrollerslab.com/*$boost
+www.techspray.com/*$boost
+www.electricstuff.co.uk/*$boost
+www.dissidents.com/*$boost
+www.fpga4fun.com/*$boost
+http://davidbuckley.net/*$boost
+mightyohm.com/*$boost
+www.dapj.com/*$boost
+engineerscommunity.com/*$boost
+instrumentationtools.com/*$boost
+http://www.vias.org/*$boost
+opencircuitdesign.com/*$boost
+www.solorb.com/*$boost
+steamcommunity.com/*$boost
+rskey.org/*$boost
+http://radiorestorer.com/*$boost
+
