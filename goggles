@@ -86,9 +86,6 @@ $discard,site=digitaltrends.com
 $discard,site=theverge.com
 $discard,site=alternativeto.net
 $discard,site=nuwber.com
-$discard,site=manoa.hawaii.edu/graduate
-$discard,site=adminguide.stanford.edu
-
 
 !BOOST IT
 ! GENERAL 
