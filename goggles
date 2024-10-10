@@ -40,7 +40,7 @@ $discard,site=everydayhealth.com
 $discard,site=eatingwell.com
 $discard,site=mayoclinic.org
 $discard,site=mountsinai.org
-$discard,site=medicalnewstoday.com
+$discard,site=medicaltoday.com
 
 ! SHOPPING
 $discard,site=macys.com
@@ -96,6 +96,9 @@ $discard,site=whitepages.com
 $discard,site=yellowpages.com
 $discard,site=nuwber.com
 
+! DERANK IT
+theguardian.com$derank
+
 !BOOST IT
 ! GENERAL 
 edu$boost
@@ -124,6 +127,7 @@ reddit.com/r/archlinux$boost
 reddit.com/r/NixOS$boost
 
 ! DISCUSSIONS
+community.myfitnesspal.com$boost
 boardreader.com$boost
 forum.mobilism.org$boost
 forums.phoenixrising.me$boost
@@ -197,6 +201,8 @@ bandcamp.com$boost
 npr.org$boost
 democracynow.org$boost
 theconversation.com$boost
+newsguardtech.com$boost
+pewresearch.org$boost
 
 ! FANDOM
 livejournal.com$boost
@@ -298,6 +304,9 @@ wordpress.com$boost
 yohasebe.com$boost
 marginalia.nu$boost
 brisray.com$boost
+schmud.de$boost
+esoteric.codes$boost
+gardenofmemory.net$boost
 
 ! SHOPPING
 shopjimmy.com$boost
@@ -358,7 +367,17 @@ steamcommunity.com$boost
 rskey.org$boost
 radiorestorer.com$boost
 
+! PICTURES
+si.edu$boost
+
+! MEDICAL 
+pubmed.ncbi.nlm.nih.gov$boost
+examine.com$boost
+
 ! MISC 
+symbols.com$boost
+lord-enki.net$boost
 perchange.org$boost
 applerankings.com$boost
 advancedassessments.co.uk$boost
+alchemywebsite.com$boost
