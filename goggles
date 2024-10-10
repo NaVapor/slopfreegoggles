@@ -1,13 +1,8 @@
 ! name: Slop free search
 ! description: A slop free experience
 ! author: NaVapor
-! avatar —  #8a649f
+! avatar: #8a649f
 ! public: false
-
-! ^^^ that is *mandatory* metadata
-
-! example comment
-
 
 ! remove website
 !$discard, site=example.com 
@@ -51,8 +46,19 @@ $discard,site=medicalnewstoday.com
 $discard,site=macys.com
 $discard,site=target.com
 $discard,site=amazon.com
+$discard,site=amazon.ca
+$discard,site=amazon.co.uk
 $discard,site=bestbuy.com
 $discard,site=walmart.com
+$discard,site=walmart.ca
+$discard,site=ubuy.ie
+$discard,site=insacart.com
+$discard,site=cvs.com
+$discard,site=walgreens.com
+$discard,site=prymal.com
+
+! EITHER AI GENERATED OR REALLY REALLY BAD
+$discard,site=javatpoint.com
 
 ! PAYWALLED
 $discard,site=nytimes.com
@@ -62,7 +68,6 @@ $discard,site=pinterest.com
 $discard,site=quora.com
 $discard,site=ifunny.co
 $discard,site=spokeo.com
-$discard,site=whitepages.com
 $discard,site=mashed.com
 $discard,site=zdnet.com
 $discard,site=greatist.com
@@ -77,20 +82,25 @@ $discard,site=womenshealthmag.com
 $discard,site=goodhousekeeping.com
 $discard,site=forbes.com
 $discard,site=toptenreviews.com
-$discard,site=yellowpages.com
 $discard,site=usnews.com
+$discard,site=thedailymeal.com
 $discard,site=msn.com
 $discard,site=tomsguide.com
 $discard,site=pcmag.com
 $discard,site=digitaltrends.com
 $discard,site=theverge.com
 $discard,site=alternativeto.net
+
+! PEOPLE FINDING WEBSITES
+$discard,site=whitepages.com
+$discard,site=yellowpages.com
 $discard,site=nuwber.com
 
 !BOOST IT
 ! GENERAL 
 edu$boost
 scholar.google.com$boost
+archive.org$boost
 
 !SUBREDDITS
 reddit.com/r/Piracy$boost
@@ -174,7 +184,11 @@ manjaro.org$boost
 gnu.org$boost
 
 ! LINK COLLECTIONS
-https://curlie.org/en$boost
+curlie.org/en$boost
+href.cool$boost
+indieseek.xyz$boost
+emreed.net$boost
+biglist.terraaeon.com$boost
 
 ! MUSIC
 bandcamp.com$boost
@@ -182,6 +196,7 @@ bandcamp.com$boost
 ! NEWS
 npr.org$boost
 democracynow.org$boost
+theconversation.com$boost
 
 ! FANDOM
 livejournal.com$boost
@@ -196,13 +211,32 @@ bluelight.org$boost
 erowid.org$boost
 harmreductionjournal.biomedcentral.com$boost
 
+! LINGUISTICS
+zompost.com$boost
+incatena.org$boost
+lingojam.com$boost
+internationalphoneticalphabet.org$boost
+arthaey.com$boost
+ithkuil.net$boost
+tatoeba.org$boost
+meamoria.com$boost
+conlangery.com$boost
+omniglot.com$boost
+frathwiki.com$boost
+quothalinguist.com$boost
+
 ! SOFTWARE
 itsfoss.com$boost
+js.org$boost
+ss64.com$boost
+haxx.se$boost
 libreoffice.org$boost
 w3schools.com$boost
 github.com$boost
 
-! SHADOW LIBRARIES/REPOSITORIES
+! SHADOW LIBRARIES/REPOSITORIES/ARCHIVES
+! software, books, movies, etc
+sourceforge.net$boost
 sci-hub.st$boost
 pdfcookie.com$boost
 idoc.tips$boost
@@ -249,7 +283,8 @@ legislature.idaho.gov$boost
 boise.craigslist.org$boost
 ktvb.com$boost
 
-! SMALL WEB/BLOGS
+! SMALL WEB/BLOGS GENERAL
+nfshost.com
 notion.site$boost
 angelfire.com$boost
 weebly.com$boost
@@ -258,6 +293,11 @@ neocities.org$boost
 blogspot.com$boost
 tripod.com$boost
 wordpress.com$boost
+
+! SMALL WEB/BLOGS SPECIFIC
+yohasebe.com$boost
+marginalia.nu$boost
+brisray.com$boost
 
 ! SHOPPING
 shopjimmy.com$boost
@@ -270,6 +310,7 @@ discogs.com$boost
 
 ! ELECTRONICS/ENGINEERING
 ieee.org$boost
+ifixit.com$boost
 e-repair.co.uk$boost
 repairfaq.org$boost
 plcs.net$boost
@@ -305,15 +346,19 @@ techspray.com$boost
 electricstuff.co.uk$boost
 dissidents.com$boost
 fpga4fun.com$boost
-http://davidbuckley.net$boost
+davidbuckley.net$boost
 mightyohm.com$boost
 dapj.com$boost
 engineerscommunity.com$boost
 instrumentationtools.com$boost
-http://vias.org$boost
+vias.org$boost
 opencircuitdesign.com$boost
 solorb.com$boost
 steamcommunity.com$boost
 rskey.org$boost
-http://radiorestorer.com$boost
+radiorestorer.com$boost
 
+! MISC 
+perchange.org$boost
+applerankings.com$boost
+advancedassessments.co.uk$boost
