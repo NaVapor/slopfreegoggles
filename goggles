@@ -106,6 +106,7 @@ scholar.google.com$boost
 archive.org$boost
 
 !SUBREDDITS
+$site=reddit.com,boost=3
 reddit.com/r/Piracy$boost
 reddit.com/r/distroreviews$boost
 reddit.com/r/DistroHopping$boost
