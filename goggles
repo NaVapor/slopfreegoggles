@@ -4,9 +4,6 @@
 ! avatar: #8a649f
 ! public: false
 
-! remove website
-!$discard, site=example.com 
-
 ! boost website
 !$site=example.com,boost=2
 
@@ -56,6 +53,9 @@ $discard,site=insacart.com
 $discard,site=cvs.com
 $discard,site=walgreens.com
 $discard,site=prymal.com
+
+! ADVERTISEMENTS
+$discard,bestreviews.guide
 
 ! EITHER AI GENERATED OR REALLY REALLY BAD
 $discard,site=javatpoint.com
