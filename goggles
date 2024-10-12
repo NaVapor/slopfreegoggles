@@ -55,7 +55,7 @@ $discard,site=walgreens.com
 $discard,site=prymal.com
 
 ! ADVERTISEMENTS
-$discard,bestreviews.guide
+$discard,site=bestreviews.guide
 
 ! EITHER AI GENERATED OR REALLY REALLY BAD
 $discard,site=javatpoint.com
@@ -97,7 +97,7 @@ $discard,site=yellowpages.com
 $discard,site=nuwber.com
 
 ! DERANK IT
-theguardian.com$derank
+! theguardian.com$derank
 
 !BOOST IT
 ! GENERAL 
